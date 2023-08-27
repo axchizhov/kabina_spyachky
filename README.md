@@ -2,6 +2,8 @@
 
 Разбор статьи [DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation](https://arxiv.org/abs/2208.12242) и тестирование подхода.
 
+[Эксперименты в коллабе](https://colab.research.google.com/github/axchizhov/kabina_spyachky/blob/main/kill_booth.ipynb)
+
 ## Проблема
 
 Умение рисовать — удовольствие дорогое. Для приобретения этого навыка людям требуется 5-10 лет упорной работы, и большинство из нас рисовать не умеет.
@@ -61,5 +63,7 @@ create (formulate) new problem -- subject driven generation -> maintain fidelity
 [Title](https://www.youtube.com/watch?v=D641lhioXMc)
 
 
+
+Матильда приглашает в killbooth из футурамы
 
 ## Эксперименты
