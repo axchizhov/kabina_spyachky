@@ -33,7 +33,7 @@
         - language drift
         example: gan reproduce the same face given 100 examples
 
-
+DreamBooth is a method to personalize text2image models like stable diffusion given just a few(3~5) images of a subject. The train_dreambooth.py script shows how to implement the training procedure and adapt it for stable diffusion.
 
 ## Решение
 
@@ -67,3 +67,10 @@ create (formulate) new problem -- subject driven generation -> maintain fidelity
 Матильда приглашает в killbooth из футурамы
 
 ## Эксперименты
+
+
+## Установка
+
+install imagemagic
+for i in *.png; do magick convert "$i" -auto-orient -thumbnail 512x512^ -gravity center -extent 512x512 "./crops/$i"; done
+
