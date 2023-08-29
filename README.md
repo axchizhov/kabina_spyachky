@@ -68,9 +68,60 @@ create (formulate) new problem -- subject driven generation -> maintain fidelity
 
 ## Эксперименты
 
+- [ ] Разложить по чекбоксам
+
+1. Оптимизации из коробки, чтобы быстрее итерироваться
+fp16 - в два раза быстрее, визуально нет отличий
+memory efficient attention (xformers)
+
+![runtime](runtime.png)
+
+2. увеличим количество эпох
+100
+300
+600
+900
+1200
+2400
+делить на 4 для получения эпох
+
+рекомендованные 300 эпох
+недоообучение до
+переобучени после
+
+КАРТИНКИ
+
+3. подключить class preservation loss
+
+для предотвращения overfitting
+
+слишком долго считается -- как-нибудь в другой раз, отключаем пока
+
+поможет с бонусной частью
+
+
+3.  подключить текст энкодер
+
+
+
+4. prompt
+
+a gun -- сложно
+
+
+
+
+
+
+- попробовать другой токен
+- попробовать более простой аксессуар (вместо глока)
+
+
+- опробовать разные наборы датасеетов
 
 ## Установка
 
 install imagemagic
 for i in *.png; do magick convert "$i" -auto-orient -thumbnail 512x512^ -gravity center -extent 512x512 "./crops/$i"; done
 
+for i in *.png; do magick convert "$i" -auto-orient -thumbnail 768x768^ -gravity center -extent 768x768 "$i"; done
