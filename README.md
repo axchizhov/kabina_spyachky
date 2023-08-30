@@ -1,12 +1,12 @@
 # Кабина спячки
 
-Разбор статьи [DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation](https://arxiv.org/abs/2208.12242) и тестирование подхода.
+Это разбор статьи [DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation](https://arxiv.org/abs/2208.12242) и тестирование их метода.
 
-[Эксперименты в коллабе](https://colab.research.google.com/github/axchizhov/kabina_spyachky/blob/main/kill_booth.ipynb)
+[Скрипт для обучения модели](https://colab.research.google.com/github/axchizhov/kabina_spyachky/blob/main/train.ipynb) в коллабе.
 
-Ссылка на вандб
+[Логи экспериментов](https://wandb.ai/axchizhov/dreambooth-lora/table) в Wandb.
 
-Про матильду
+ИЛЛЮСТАРЦИЯ: сгенерированная фотка с матильдой
 
 ## Проблема
 
@@ -22,7 +22,9 @@
 
 ## Метод решения
 
-Задача решается файнтюнингом любой генеративной text2image модели. Метод основан на двух новых идеях:
+Задача решается файнтюнингом любой генеративной text2image модели. 
+
+Метод основан на двух новых идеях:
 
 1. Использование редкого токена в качестве метки субъекта
 2. Функция потерь, которая предотвращает переобучение категории субъекта
