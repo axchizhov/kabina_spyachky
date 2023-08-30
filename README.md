@@ -46,11 +46,11 @@
 
 ![Mathilda](assets/Mathilda_orig.png)
 
-В качестве обучающего текста взял "a photo of sks girl", а для валидации использовал "A photo of sks girl with a glock".
+Для обучения взял фразу "a photo of sks girl", а для валидации использовал "a photo of sks girl with a glock".
 
 ### Результаты
 
-1. **Модель действительно адаптирует модель под субъект, даже без class-preservation loss**
+1. **Метод действительно адаптирует модель под субъект, даже без class-preservation loss**
 
 Генерация на разных эпохах обучения:
 
